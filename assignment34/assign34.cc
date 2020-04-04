@@ -48,7 +48,7 @@ using ceres::Solve;
 // derivatives.
 struct CostFunctor {
   template <typename T> bool operator()(const T* const x,const T* const y, T* residual) const {
-    residual[0] = (10.0*pow(x[0],2.0))-(pow (y[0],2.0)); //pow(x, 2.0);
+    residual[0] = 10.0*pow(x[0],2.0)+pow (y[0],2.0); 
     return true;
   }
 };
