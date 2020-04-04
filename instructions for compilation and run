@@ -1,0 +1,9 @@
+1.for compilation and run commands.
+i     mkdir build
+ii.   cd build
+iii.  cmake ..
+iv.   cmake --build .
+for run folder name tutorial given in cmakeListtext file
+.\tutorial
+
+

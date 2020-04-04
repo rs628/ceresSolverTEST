@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/assign34.dir/assign34.cc.o  -o assign34 /usr/local/lib/libceres.a -lglog /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.1 -lspqr -lcholmod -lccolamd -lcamd -lcolamd -lamd -llapack -lf77blas -latlas -lsuitesparseconfig -lrt -lcxsparse -llapack -lf77blas -latlas -lsuitesparseconfig -lrt -lcxsparse -lgomp -lpthread 

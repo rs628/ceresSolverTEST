@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/renu/ceresSolver/newtestfolderhelloworld/helloworld.cc
+/home/renu/ceresSolverTEST/newtestfolderhelloworld/helloworld.cc
 ceres/ceres.h
-/home/renu/ceresSolver/newtestfolderhelloworld/ceres/ceres.h
+/home/renu/ceresSolverTEST/newtestfolderhelloworld/ceres/ceres.h
 glog/logging.h
-/home/renu/ceresSolver/newtestfolderhelloworld/glog/logging.h
+/home/renu/ceresSolverTEST/newtestfolderhelloworld/glog/logging.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

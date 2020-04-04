@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/renu/ceresSolver/testcurvefitt/curve_fitting.cc
+/home/renu/ceresSolverTEST/testcurvefitt/curve_fitting.cc
 ceres/ceres.h
-/home/renu/ceresSolver/testcurvefitt/ceres/ceres.h
+/home/renu/ceresSolverTEST/testcurvefitt/ceres/ceres.h
 glog/logging.h
-/home/renu/ceresSolver/testcurvefitt/glog/logging.h
+/home/renu/ceresSolverTEST/testcurvefitt/glog/logging.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
