@@ -48,7 +48,7 @@ using ceres::Solve;
 // derivatives.
 struct CostFunctor {
   template <typename T> bool operator()(const T* const x,const T* const y, T* residual) const {
-    residual[0] = 10.0*pow(x[0],2.0)+pow (y[0],2.0); 
+    residual[0] = 10.0*x[0]*x[0]+y[0]*y[0]; 
     return true;
   }
 };
@@ -58,9 +58,9 @@ int main(int argc, char** argv) {
 
   // The variable to solve for with its initial value. It will be
   // mutated in place by the solver.
-  double x = 1;
+  double x = 0.01;
   const double initial_x = x;
-  double y = 1;
+  double y = 0.01;
   const double initial_y = y; 
 
   // Build the problem.
