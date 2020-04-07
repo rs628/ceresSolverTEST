@@ -58,9 +58,9 @@ int main(int argc, char** argv) {
 
   // The variable to solve for with its initial value. It will be
   // mutated in place by the solver.
-  double x = 0.01;
+  double x = 1;
   const double initial_x = x;
-  double y = 0.01;
+  double y = 1;
   const double initial_y = y; 
 
   // Build the problem.
@@ -73,8 +73,13 @@ int main(int argc, char** argv) {
   problem.AddResidualBlock(cost_function, NULL, &x,&y);
 
   // Run the solver!
+
   Solver::Options options;
-  options.minimizer_progress_to_stdout = true;
+  options.linear_solver_type = ceres::DENSE_QR;
+  options.dogleg_type; 
+ // options.minimizer_progress_to_stdout = true;
+  options.inner_iteration_tolerance = 1e-3;
+  options.inner_iteration_ordering = NULL;
   Solver::Summary summary;
   Solve(options, &problem, &summary);
 
